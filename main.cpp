@@ -1,6 +1,7 @@
 #include <iostream>
+#include <vector>
 using namespace std;
-void ordina(int n, int v[]) 
+void ordina(int n, vector <int> & v) 
 {
     int i, j, t;
     for (i = 0; i <= n - 1; i++) 
@@ -17,7 +18,7 @@ void ordina(int n, int v[])
     }
 }
 
-void visualizza(int n, int v[]) 
+void visualizza(int n, vector <int> & v) 
 {
     int i;
     for (i = 0; i <= n - 1; i++) 
@@ -30,7 +31,8 @@ int main()
 {
     int n, i;
     n = 3;
-    int v[n], w[n];
+    vector <int> v (n);
+    vector <int> w (n);
     i = 0;
     while (i <= n - 1) 
     {
